@@ -19,7 +19,7 @@ const HeroSection = () => {
         {/* Main heading */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
           Next-Generation{" "}
-          <span className="gradient-text">Web3 Protocol</span>{" "}
+          <span className="text-white">Web3 Protocol</span>{" "}
           for Autonomous Agents
         </h1>
         

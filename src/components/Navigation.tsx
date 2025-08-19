@@ -9,7 +9,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl font-bold text-foreground">
-              OG <span className="gradient-text">Liminous</span>
+              OG <span className="gradient-text">LIMINOUS</span>
             </h1>
           </div>
 
@@ -17,7 +17,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a 
               href="#build" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-black hover:text-foreground transition-colors"
             >
               Build
             </a>
