@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +29,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					muted: 'hsl(var(--primary-muted))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +55,18 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Web3 specific colors
+				'web3-gradient': {
+					start: 'hsl(var(--web3-gradient-start))',
+					end: 'hsl(var(--web3-gradient-end))'
+				},
+				'tech-blue': 'hsl(var(--tech-blue))',
+				'hero-button': {
+					bg: 'hsl(var(--hero-button-bg))',
+					text: 'hsl(var(--hero-button-text))',
+					border: 'hsl(var(--hero-button-border))',
+					hover: 'hsl(var(--hero-button-hover))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
