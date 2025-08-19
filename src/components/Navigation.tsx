@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -14,18 +15,6 @@ const Navigation = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a 
-              href="#add-page" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Add Page
-            </a>
-            <a 
-              href="#learn" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Learn
-            </a>
             <a 
               href="#build" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"

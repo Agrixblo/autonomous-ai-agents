@@ -1,41 +1,42 @@
+
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 hero-bg"></div>
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/0465dfb8-235b-4aca-bf62-75125ccbd5fe.png)'
+        }}
+      ></div>
       
-      <div className="relative max-w-4xl mx-auto text-center">
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/20"></div>
+      
+      <div className="relative max-w-4xl mx-auto text-center z-10">
         {/* Main heading */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
           Next-Generation{" "}
           <span className="gradient-text">Web3 Protocol</span>{" "}
           for Autonomous Agents
         </h1>
         
         {/* Description */}
-        <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
           OG Liminous leverages autonomous computer-using agents—intelligent, self-operating 
           software entities that can independently execute complex tasks across desktop 
           environments, third-party applications, and blockchain-based systems.
         </p>
         
         {/* CTA Button */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center">
           <Button 
             size="lg" 
             className="bg-hero-button-bg text-hero-button-text border border-hero-button-border hover:bg-hero-button-hover px-8 py-3 text-base font-semibold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
           >
             Start Building
-          </Button>
-          
-          <Button 
-            variant="ghost" 
-            size="lg"
-            className="text-muted-foreground hover:text-foreground px-8 py-3 text-base font-medium"
-          >
-            Learn More →
           </Button>
         </div>
         
