@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  console.log("HeroSection component rendering");
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16">
       {/* Background image */}
